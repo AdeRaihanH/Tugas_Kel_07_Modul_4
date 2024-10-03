@@ -54,3 +54,39 @@ int main()
    cout << endl;
    menu();
 
+   for(int i=0;i<=3;i++){
+       cout <<"\nApakah anda akan memesan "<< menu2[i] << " (Y/N): ";
+       cin >> o;
+       if(o =='Y'){
+           cout << "Berapa yang akan dipesan: ";
+           cin >> q;
+           hasil = hasil + q*harga[i];
+       }
+       else{
+           cout << "Anda tidak memilih " << menu2[i];
+           cout << endl;
+ 
+       }
+ 
+   }
+ 
+   cout << "\nApakah anda ingin menambahkan take-out? (Y/N): ";
+   cin >> t;
+ 
+   if(t == 'Y'){
+       cout << endl;
+       obj.menu_takeout();
+       for(int j;j<=2;j++){
+           cout <<"\nApakah anda akan memesan " << takeout2[j] << " (Y/N): ";
+           cin >> l;
+           if(l == 'Y'){
+               cout << "Berapa yang akan dipesan: ";
+               cin >> r;
+               hasil = hasil + r*harga_takeout[j];
+           }
+           else{
+               cout << "Anda tidak memilih " << takeout2[j];
+               cout << endl;
+           }
+       }
+   }
