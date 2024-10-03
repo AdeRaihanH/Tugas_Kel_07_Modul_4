@@ -21,3 +21,16 @@ int bayar_kas (int uang, int jumlah, int k)
         return uang - (jumlah - (jumlah*0.1));
     }
 }
+
+class takeout
+{
+   public:
+       void menu_takeout()
+       {
+           cout << "================================" << endl;
+           cout << "Menu Take-Out" << endl;
+           cout << "1. Ice Cream   Harga = Rp8.000" << endl;
+           cout << "2. Pie         Harga = Rp16.000" << endl;
+           cout << "3. Roti Hangat Harga = Rp11.000" << endl;
+           cout << "================================" << endl;
+       }
