@@ -90,3 +90,41 @@ int main()
            }
        }
    }
+
+    else{
+        cout << "Anda tidak menambahkan take-out" << endl;
+        cout << endl;
+    }
+
+
+    cout << "Total pembayaran: " << hasil << endl;
+    cout <<"===========================" << endl;
+
+    cout << "Silahkan masukkan uang anda: ";
+    cin >> x;
+    cout << endl;
+
+    while(x<hasil){
+        cout << "Uang anda kurang dari total" << endl;
+        cout << "Tolong masukkan jumlah uang yang benar: ";
+        cin >> x;
+    }
+
+
+    cout <<"===========================" << endl;
+
+    cout << "==============================" << endl;
+    cout << "1. Cash     Diskon: Tidak ada" << endl;
+    cout << "2. Kredit   Diskon: 10%" << endl;
+    cout << "==============================" << endl;
+    cout << "Pilih metode pembayaran: ";
+    cin >> w;
+    cout << "\nKembalian anda: " << bayar_kas(x,hasil,w) << endl;
+
+    cout << endl;
+    cout << "==============================" << endl;
+    cout << "Terima Kasih Sudah Membeli!!" << endl;
+    cout << "==============================" << endl;
+
+    return 0;
+}
