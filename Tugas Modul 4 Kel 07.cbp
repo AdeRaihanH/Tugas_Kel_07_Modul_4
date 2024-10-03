@@ -34,3 +34,22 @@ class takeout
            cout << "3. Roti Hangat Harga = Rp11.000" << endl;
            cout << "================================" << endl;
        }
+
+};
+int main()
+{
+   takeout obj;
+   int x, y, q,w,e,r;
+   int hasil=0;
+   char o,t,l ;
+   string menu2[4] ={"Burger", "French Fries", "Coca-cola", "Combo Meal"};
+   string takeout2[3] = {"Ice Cream", "Pie", "Roti"};
+   int harga[4] ={15000,10000,8000,26400};
+   int harga_takeout[3] = {8000,16000,11000};
+ 
+ 
+   cout <<"===========================" << endl;
+   cout <<"Selamat datang" << endl;
+   cout <<"===========================" << endl;
+   cout << endl;
+   menu();
