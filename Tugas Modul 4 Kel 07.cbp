@@ -1,1 +1,23 @@
+#include <iostream>
 
+using namespace std;
+void menu()
+{
+    cout << "================================="<< endl;
+    cout << "Menu Utama" << endl;
+    cout << "1. Burger       Harga = Rp15.000" << endl;
+    cout << "2. French fries Harga = Rp10.000" << endl;
+    cout << "3. Coca-Cola    Harga = Rp8.000" << endl;
+    cout << "4. Combo meal   Harga = Rp26.400" << endl;
+    cout << "=================================" <<endl;
+}
+
+int bayar_kas (int uang, int jumlah, int k)
+{
+    if(k == 1){
+        return uang - jumlah;
+    }
+    else if(k == 2){
+        return uang - (jumlah - (jumlah*0.1));
+    }
+}
